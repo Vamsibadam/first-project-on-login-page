@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>VAMSI BADAM</title>
+   
+    <style>
+        .all{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 300px;
+            height: 70px;
+            border-radius: 10px;
+            border: none;
+            background: rgb(37, 149, 255);
+            font-size: 25px;
+            font-family: impact;
+            color: white;
+            transition: 0.25s all ease-in-out;
+        }
+        .all:hover{
+            box-shadow: 0px 5px 15px 15px rgb(17, 33, 80);
+            border: none;
+            width: 310px;
+            height: 80px;
+            font-size: 28px;
+        }
+       
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(bmw.jpg);
+            background-size: cover;
+        }
+        .box1{
+            width: 400px;
+            height: 400px;
+            border: rgba(99, 99, 99, 0.767) 1px solid;    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 0px 10px 5px rgba(99, 99, 99, 0.767);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            background: transparent;
+            display: none;
+        
+        }
+  
+        .lgn{
+            
+            margin-left: 150px;
+            margin-top: 20px;
+            font-size: 50px;
+            background: linear-gradient(to left ,rgb(109, 18, 18)35%,rgb(45, 45, 190))35%;
+            background-size: 200% auto;
+            
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            animation: gradient 3s linear infinite;
+            width: fit-content;
+            height: fit-content;
+        }
+        @keyframes gradient{
+            0%{
+                background-position: 0% 75%;
+            }
+            50%{
+                background-position: 100% 30%;
+            }
+            100%{
+                background-position: 0% 70%;
+            }  
+        }
+        .username input{
+           height: 50px;
+           width: 340px;
+           border-radius: 5px;
+           padding-left: 10px;
+           margin-left: 20px;
+           margin-top: 50px;
+           border: none;
+           background: transparent;
+           border: 1px rgb(160, 160, 160) solid;
+           transition: 0.25s all ease-in-out;
+        }
+        .username input::placeholder{
+            font-size: 15px;
+            font-style: impact;
+            color: rgba(199, 194, 194, 0.808);
+        }
+        .username input:hover{
+            margin-left: 15px;
+            margin-top: 45px;
+            width: 350px;
+            height: 60px;
+            
+            background: linear-gradient(to right, rgb(179, 66, 66) 20%,rgb(47, 53, 150) 100%);
+           
+            
+        }
+       
+        .password input{
+           height: 50px;
+           width: 340px;
+           border-radius: 5px;
+           padding-left: 10px;
+           margin-left: 20px;
+           margin-top: 15px;
+           border: none;
+           background: transparent;
+           transition: 0.25s all ease-in-out;
+           border: 1px grey solid;
+           
+        }
+        .password input::placeholder{
+            font-size: 15px;
+            font-style: impact;
+            color: rgba(199, 194, 194, 0.808);
+        }
+        .password input:hover{
+            margin-left: 15px;
+            margin-top: 10px;
+            width: 350px;
+            height: 60px;
+            
+            background: linear-gradient(to right, rgb(179, 66, 66) 20%,rgb(47, 53, 150) 100%);
+            
+        }
+        .fg-pass{
+            margin-top: 20px;
+        }
+        .fg-pass a{
+            text-decoration: none;
+            color: rgb(160, 160, 160);
+            margin-left: 22px;
+            
+        }
+        .fg-pass a:hover{
+            text-decoration: underline;
+            color: rgb(255, 71, 71);
+            
+        }
+        .login{
+          margin-top: 10px;
+        }   
+        .login button{
+            border: 1px grey solid;
+            height: 50px;
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 45px;
+            font-size: 15px;
+            font-style: impact;
+            font-weight: bold;
+            background-color: transparent;
+            transition: 0.25s all ease-in-out;
+            color: rgb(214, 208, 208);
+        }
+        .login button:hover{
+            box-shadow: 0 0 20px 5px rgb(109, 18, 18);
+            background-color: rgb(109, 18, 18);
+            color: rgb(255, 255, 255);
+            border: 1px rgb(109, 18, 18) solid;
+        }
+
+        .query {
+            text-decoration: none;
+            color: rgb(214, 214, 214);
+            margin-left: 100px;
+            margin-top: 5px;
+        }
+        .query button{
+            color: darkgrey;
+            margin-left: 1px;
+            background: transparent;
+            border: none;
+            padding: 0px;
+        }
+        .query button:hover{
+            font-size: 17px;
+            color: rgb(247, 35, 35);
+        }
+        .cfm-ps input{
+           height: 50px;
+           width: 340px;
+           border-radius: 5px;
+           padding-left: 10px;
+           margin-left: 20px;
+           margin-top: 15px;
+           border: none;
+           background: transparent;
+           transition: 0.25s all ease-in-out;
+           border: 1px grey solid;
+            
+        }
+        .cfm-ps input::placeholder{
+            font-size: 15px;
+            font-style: impact;
+            color: rgba(199, 194, 194, 0.808);
+        }
+        .cfm-ps input:hover{
+            margin-left: 15px;
+            margin-top: 10px;
+            width: 350px;
+            height: 60px;
+            
+            background: linear-gradient(to right, rgb(179, 66, 66) 20%,rgb(47, 53, 150) 100%);
+            
+        }
+        .login1 button{
+            border: 1px grey solid;
+            height: 50px;
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 45px;
+            font-size: 15px;
+            font-style: impact;
+            font-weight: bold;
+            background-color: transparent;
+            transition: 0.25s all ease-in-out;
+            color: rgb(223, 17, 17);
+        }
+        .login1 button:hover{
+            box-shadow: 0 0 20px 5px rgb(37, 34, 194);
+            background-color: rgb(37, 34, 194);
+            color: rgb(187, 69, 69);
+            border: 1px rgb(37, 34, 194)solid;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding-top: 15px;
+            
+        }
+        .icons a{
+            margin-left: 10px;
+            padding: 6px;
+            background: white;
+            border-radius: 4px;
+        }
+        .icons a .insta{
+            padding: 0px !important; 
+        }
+        .icons a:hover{
+            background: white;
+            box-shadow: 0px 0px 5px 3px white;
+            border: none;
+            width: 35px;
+            height: 35px;
+        }
+        .go-back{
+            display: none;
+            color: rgb(222, 222, 222);
+            padding-left: 100px;
+            margin-top: 1px;
+        }
+        .go-back button{
+            color: darkgrey;
+            margin-left: 1px;
+            background: transparent;
+            border: none;
+            padding: 0px;
+        }
+        .go-back button:hover{
+          
+            color: rgb(247, 35, 35);
+        }
+        .go-back a{
+            color: rgb(222, 222, 222);
+            text-decoration: none;
+
+        }
+        .go-back a:hover{
+            font-size: 15px;
+            color: rgb(247, 35, 35);
+        }
+
+    </style>
+   
+</head>
+<body>
+    <button class="all" onclick="some()">LOGIN / SIGN UP?</button>
+    <div class="box1">
+        <div class="lgn">LOGIN</div>
+
+        <div class="username"><input type="text" placeholder="Username"></div>
+        <div class="password"><input type="password" placeholder="Password"></div>
+        <div class="fg-pass"><a href="#">Forgot Password?</a></div>
+        <div class="login"><button>LOGIN</button></div>
+        <div class="query">Don't have an account <button onclick="action()">Sign up?</button></div>
+        <div class="go-back">Already have an account? <button ><a href="loginsignup.html">Log in</a></button></div>
+        
+    </div>
+
+    <script>
+        lgnObj = document.getElementsByClassName("lgn")[0];
+        box1Obj = document.getElementsByClassName("box1")[0];
+        passwordInput = document.querySelector(".password input");
+        buttonObj=document.getElementsByClassName("all")[0]
+        goBackObj=document.getElementsByClassName("go-back")[0]
+        
+        function some(){
+            box1Obj.style.display='block'
+            buttonObj.remove()
+            document.body.style.backgroundImage = 'url(260947.jpg)'
+            document.body.style.transition='1s all ease'
+        }
+       
+       function action(){
+        lgnObj.innerHTML='SIGN UP'
+        lgnObj.style.marginLeft = '130px';
+        
+        
+        document.body.style.backgroundImage = 'url(marvels-spider-man-.jpg)'
+        document.body.style.transition='1s all ease'
+        
+        
+        cfmPsHTML = '<div class="cfm-ps"><input type="password" placeholder="Confirm Password"></div>';
+    
+       
+        passwordInput.insertAdjacentHTML('afterend', cfmPsHTML);
+        goBackObj.style.display='block'
+    
+     
+        box1Obj.style.height = '510px';
+        box1Obj.style.transition= '0.5s all ease'
+
+        fgPassObj=document.getElementsByClassName("fg-pass")[0]
+        fgPassObj.remove()
+        
+        loginObj=document.getElementsByClassName("login")[0]
+        loginObj.innerHTML=`<div class="login1"><button>SIGN UP</button></div>`
+        loginObj.style.marginTop='30px'
+        
+        queryObj=document.getElementsByClassName("query")[0]
+        queryObj.remove()
+        box1Obj.innerHTML+=`<div class="icons"><a href="#"><img width="35" height="35"  src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" /></a>
+                            <a href="#"><img width="35" height="35" class="insta" src="https://img.icons8.com/cute-clipart/64/instagram-new.png" alt="instagram-new"/></a>
+                            <a href="#"><img width="34" height="34"  src="https://img.icons8.com/ios-filled/50/mac-os.png" alt="mac-os"/></a></div>?`
+        
+     
+         }
+        
+
+  
+
+    </script>
+    
+    
+
+   
+</body>
+
+</html>
